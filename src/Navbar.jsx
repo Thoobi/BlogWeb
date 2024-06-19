@@ -17,7 +17,7 @@ return (
         <div>
             <ul className='font-medium text-lg'>
                 <li>
-                    <Link to="/home">Home</Link>
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
                     <Link to="/articles">Articles</Link>
