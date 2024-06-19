@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 /* Navigation styling */
 nav
 {
@@ -102,4 +101,25 @@ section{
 }
 .article-listed{
     list-style-position: inside;
+}
+.scroll{
+    width: 30px;
+    height: 30px; 
+    border-radius: 20px; 
+    background-color: purple;
+    color: white;
+    display: flex; 
+    align-items: center;
+    justify-content : center;
+    position: fixed;
+    right: 10px;
+    bottom: 110px;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+/*style for footer*/
+.footer{
+    border-top: 0.5px solid #aca9a9;
 }

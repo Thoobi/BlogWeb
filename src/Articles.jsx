@@ -1,8 +1,27 @@
-import React from 'react'
-import { MdNoteAdd } from "react-icons/md";
+import React, { useEffect } from 'react';
+import { MdArrowUpward } from "react-icons/md";
 import image8 from './assets/Espresso.png'
 
 const Articles = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollDiv = document.querySelector('.scroll');
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 400) {
+        scrollDiv.style.display = 'flex';
+      } else {
+        scrollDiv.style.display = 'none';
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <>
     <div className='article-body'>
@@ -93,7 +112,9 @@ const Articles = () => {
   </section>
     </article>
     </div>
+    <div className= 'scroll'  onClick={scrollToTop} ><MdArrowUpward /></div>
     </>
+    
   )
 }
 
