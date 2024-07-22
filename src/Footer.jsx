@@ -17,14 +17,14 @@ const Footer = () =>
     }, []);
 
     return (
-            <div className="footer" style={{ 'height': '40px','display': 'flex', 'alignItems': 'center', 'justifyContent': 'space-between', 'margin': '0 100px 0 100px'}}>
-                <div style={{'display': 'flex', 'justifyContent': 'center'}}>
-                <h4 style={{'fontWeight': 'bold'}}>hotcoffee</h4>
+            <div className="h-10 w-full flex items-center justify-between border border-t-0.5 border-custom-gray pl-[105px] pr-[105px]">
+                <div className="flex justify-center">
+                <h4 className="font-bold">hotcoffee</h4>
                 <h1 className="text-ash text-center font-regular text-medium">
                  &copy; { currentYear } all rights reserved
                 </h1>
                 </div>
-                <div style={{'width': '80px', 'display': 'flex', 'justifyContent': 'space-between'}}>
+                <div className="w-[80px] flex justify-between">
                 <FaLinkedin />
                 <FaXTwitter />
                 <FaInstagram />
