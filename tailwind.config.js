@@ -6,6 +6,13 @@ export default {
   ],
   theme: {
     extend: {
+      borderWidth: {
+        '0.5': '0.5px', 
+      },
+      colors: {
+        'custom-gray': '#aca9a9', 
+      },
+      
       height: {
         '120': '467px',
         '16': '67px',
